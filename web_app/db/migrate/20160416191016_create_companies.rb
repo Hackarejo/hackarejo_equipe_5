@@ -10,6 +10,6 @@ class CreateCompanies < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    add_foreign_key :companies, :users, column: :responsible_id
+    add_foreign_key :companies, :people, column: :responsible_id
   end
 end
