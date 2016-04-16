@@ -5,20 +5,18 @@ class WelcomeController < ApplicationController
 
     @welcome =
         {
-            name: 'ColdAPI',
-            for: 'QuebraGelo',
+            name: 'DivulgaAPI',
+            for: 'Divulgarejo',
             current_version: {
                 version: 'v1',
-                codename: 'Apollo',
+                codename: 'MasterPica',
                 status: 'development'
             },
             who: [{ name: 'Bruno Casali', contact: '@brunoocasali' }],
             start:
                 {
                     docs: 'no docs, for while',
-                    why: 'Are not you tired of sameness?',
-                    end_points: %W(#{current_uri}api/v1/people #{current_uri}api/v1/locations #{current_uri}api/v1/statuses),
-                    homes: %w(https://github.com/Unisep/quebra-gelo-api http://quebra-gelo.strikingly.com/)
+                    why: 'Everyone wants to come back to the local store'
                 }
         }
     respond_with @welcome
