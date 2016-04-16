@@ -4,6 +4,10 @@ services:
 build:
   steps:
     - script:
+      name: Enter in directory
+      code: cd web_app/
+
+    - script:
       name: Configuring Bundle
       code: bundle config build.nokogiri --use-system-libraries
 
