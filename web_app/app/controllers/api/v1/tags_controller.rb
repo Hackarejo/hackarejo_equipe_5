@@ -39,7 +39,7 @@ module Api
       end
 
       def tag_params
-        params.require(:tag).permit(:company_id, :name, :price)
+        params.require(:tag).permit(:product_id, :name)
       end
     end
   end
