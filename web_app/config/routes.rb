@@ -12,6 +12,10 @@ Rails.application.routes.draw do
       resources :products
       resources :companies
       resources :tags
+
+      resources :people do
+        get 'find_by', on: :collection
+      end
     end
   end
 end
