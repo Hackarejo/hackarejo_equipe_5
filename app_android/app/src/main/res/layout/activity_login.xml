@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:id="@+id/layout">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/QuebraGelo"
+            android:id="@+id/txtTitle"
+            android:textSize="50sp"
+            android:textIsSelectable="false"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000"
+            android:fontFamily="@string/generally_speak"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+
+    <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/texto"
+            android:id="@+id/textView"
+            android:textColor="#ffbbbbbb"
+            android:layout_below="@+id/txtTitle"
+            android:layout_centerHorizontal="true" />
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/textView"
+            android:layout_above="@+id/login_button"
+            android:layout_alignEnd="@+id/login_button"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/image_description"
+            android:baselineAlignBottom="false"/>
+</RelativeLayout>

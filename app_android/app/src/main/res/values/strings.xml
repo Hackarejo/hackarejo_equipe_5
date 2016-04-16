@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">QuebraGelo</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="login">login</string>
+    <string name="app_profile_page">Seu Perfil</string>
+    <string name="logo">txtlogo</string>
+    <string name="app_id">616709811797639</string>
+    <string name="QuebraGelo">Quebra Gelo</string>
+    <string name="texto">Que tal fazer novos amigos?</string>
+    <string name="generally_speak">Generally Speaking.ttf</string>
+    <string name="default_tags">futebol, carros, games, tecnologia, informação</string>
+    <string name="image_description">A image representing the internal grid!</string>
+
+    <string name="cake_icon_alt">Birthday</string>
+    <string name="subject_icon_alt">Bio</string>
+    <string name="tags_icon_alt">Tags</string>
+
+    <string name="label_name_default">Person\'s name!</string>
+
+    <string name="searching_people_text">Searching for people...</string>
+</resources>

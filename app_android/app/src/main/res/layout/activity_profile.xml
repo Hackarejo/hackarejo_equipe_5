@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- Profile image -->
+    <com.quebragelo.quebragelo.activity.RoundedImageView
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+    <!-- / Profile image -->
+
+    <!-- Name part -->
+    <ViewSwitcher
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/name_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_alignParentStart="true">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/label_name_default"
+                android:id="@+id/label_name"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:gravity="center" />
+        <EditText
+                android:id="@+id/hidden_edit_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:gravity="center"/>
+    </ViewSwitcher>
+    <!-- / Name part -->
+
+    <!-- Birthday part -->
+    <ImageView
+            android:layout_width="@dimen/icon_dimension"
+            android:layout_height="@dimen/icon_dimension"
+            android:id="@+id/cake_icon"
+            android:layout_marginStart="29dp"
+            android:src="@drawable/ic_cake_black_18dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/name_switcher"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/cake_icon_alt"/>
+
+    <ViewSwitcher
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/birthday_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cake_icon"
+            android:layout_alignStart="@+id/profile_image">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/label_birthday"
+                android:gravity="center"
+                />
+
+        <EditText
+                android:id="@+id/hidden_edit_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </ViewSwitcher>
+    <!-- / Birthday part -->
+
+    <!-- Tags part -->
+    <ImageView
+            android:layout_width="@dimen/icon_dimension"
+            android:layout_height="@dimen/icon_dimension"
+            android:id="@+id/loyalty_icon"
+            android:layout_below="@+id/cake_icon"
+            android:layout_alignStart="@+id/cake_icon"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/ic_loyalty_black_18dp"
+            android:contentDescription="@string/tags_icon_alt" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/default_tags"
+            android:id="@+id/text_tags"
+            android:layout_alignStart="@+id/birthday_switcher"
+            android:layout_alignEnd="@+id/birthday_switcher"
+            android:layout_alignTop="@+id/loyalty_icon"
+            android:maxLines="2"
+            android:layout_above="@+id/bio_switcher" />
+    <!-- / Tags part -->
+
+    <!-- Bio part -->
+    <ImageView
+            android:layout_width="@dimen/icon_dimension"
+            android:layout_height="@dimen/icon_dimension"
+            android:id="@+id/subject_icon"
+            android:src="@drawable/ic_subject_black_18dp"
+            android:layout_below="@+id/loyalty_icon"
+            android:layout_alignStart="@+id/loyalty_icon"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/subject_icon_alt" />
+
+    <ViewSwitcher
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/bio_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/text_tags"
+            android:layout_alignTop="@+id/subject_icon"
+            android:layout_alignParentEnd="true">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_height="105dp"
+                android:ems="15"
+                android:id="@+id/label_bio" />
+
+        <EditText
+                android:id="@+id/hidden_edit_bio"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_height="105dp"
+                android:layout_width="fill_parent"
+                android:inputType="textMultiLine" />
+    </ViewSwitcher>
+    <!-- / Bio part -->
+
+    <com.software.shell.fab.ActionButton
+            android:id="@+id/action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:onClick="turnGreenButton" />
+</RelativeLayout>
