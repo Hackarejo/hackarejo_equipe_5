@@ -1,22 +1,18 @@
+# Rename this file to just database.yml, and configure as you need! (localhost)
+
 default: &default
   adapter: postgresql
   encoding: unicode
+  pool: 5
   host: localhost
   port: 5432
   username: 'dba'
   password: 'admin'
-  pool: 5
 
 development:
   <<: *default
-  database: api_development
+  database: db_development
 
 test:
   <<: *default
-  database: api_test
-
-production:
-  <<: *default
-  database: api_production
-  username: api
-  password: <%= ENV['API_DATABASE_PASSWORD'] %>
+  database: db_test
