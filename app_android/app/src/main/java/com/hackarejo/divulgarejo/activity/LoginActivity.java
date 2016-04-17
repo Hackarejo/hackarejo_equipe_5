@@ -145,7 +145,7 @@ public class LoginActivity extends Activity {
         request.setParameters(parameters);
         request.executeAsync();
 
-        Intent intent = new Intent(getApplicationContext(), SearchPeopleActivity.class);
+        Intent intent = new Intent(getApplicationContext(), LoadProductsActivity.class);
         startActivity(intent);
     }
 }
