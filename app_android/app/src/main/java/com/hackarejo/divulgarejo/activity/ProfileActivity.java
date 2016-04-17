@@ -70,7 +70,7 @@ public class ProfileActivity extends Activity {
     }
 
     public void initializeElements(){
-        imageView = (RoundedImageView) findViewById(R.id.profile_image);
+        imageView = (RoundedImageView) findViewById(R.id.prouct_image);
 
         actionButton = (ActionButton) findViewById(R.id.action_button);
 

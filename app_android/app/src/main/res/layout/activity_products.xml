@@ -26,7 +26,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/label_name_default"
+                android:text="@string/label_name_prouct"
                 android:id="@+id/label_name"
                 android:maxLines="1"
                 android:textAlignment="center"
@@ -47,7 +47,7 @@
             android:layout_height="@dimen/icon_dimension"
             android:id="@+id/cake_icon"
             android:layout_marginStart="29dp"
-            android:src="@drawable/ic_cake_black_18dp"
+            android:src="@android:drawable/ic_menu_day"
             android:layout_marginTop="25dp"
             android:layout_below="@+id/name_switcher"
             android:layout_alignParentStart="true"
@@ -58,8 +58,9 @@
             android:id="@+id/birthday_switcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/cake_icon"
-            android:layout_alignStart="@+id/prouct_image">
+        android:layout_alignBaseline="@+id/text_tags"
+        android:layout_alignBottom="@+id/text_tags"
+        android:layout_alignParentEnd="true">
 
         <TextView
                 android:layout_width="wrap_content"
@@ -94,11 +95,10 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/default_tags"
             android:id="@+id/text_tags"
-            android:layout_alignStart="@+id/birthday_switcher"
-            android:layout_alignEnd="@+id/birthday_switcher"
-            android:layout_alignTop="@+id/loyalty_icon"
+        android:layout_alignTop="@+id/loyalty_icon"
             android:maxLines="2"
-            android:layout_above="@+id/bio_switcher" />
+            android:layout_above="@+id/bio_switcher"
+        android:layout_alignStart="@+id/prouct_image" />
     <!-- / Tags part -->
 
     <!-- Bio part -->
@@ -146,4 +146,13 @@
             android:layout_marginRight="@dimen/fab_margin"
             android:layout_marginBottom="@dimen/fab_margin"
             android:onClick="turnGreenButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_date_promotion"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/birthday_switcher"
+        android:layout_alignBottom="@+id/birthday_switcher"
+        android:layout_alignStart="@+id/text_tags" />
 </RelativeLayout>

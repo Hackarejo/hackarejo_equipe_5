@@ -6,9 +6,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-/**
- * Created by Jhony on 09/06/2015.
- */
 public class PictureAdapter extends BaseAdapter {
 
     private Context context;

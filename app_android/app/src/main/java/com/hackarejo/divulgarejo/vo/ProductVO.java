@@ -1,11 +1,13 @@
 package com.hackarejo.divulgarejo.vo;
 
+import com.hackarejo.divulgarejo.helper.WebAddressable;
+
 /**
  * Created by Ezequiel on 16/04/2016.
  */
-public class ProductVO {
+public class ProductVO implements WebAddressable {
 
-    private int productsId;
+    private int Id;
 
     private String name;
 
@@ -14,11 +16,11 @@ public class ProductVO {
     private CompanyVO companies;
 
     public int getProductsId() {
-        return productsId;
+        return Id;
     }
 
     public void setProductsId(int productsId) {
-        this.productsId = productsId;
+        this.Id = productsId;
     }
 
     public String getName() {
@@ -43,5 +45,20 @@ public class ProductVO {
 
     public void setCompanies(CompanyVO companies) {
         this.companies = companies;
+    }
+
+    @Override
+    public String getPath() {
+        return "products";
+    }
+
+    @Override
+    public Boolean hasId() {
+        return getProductsId() > 0;
+    }
+
+    @Override
+    public int getId() {
+        return getProductsId();
     }
 }
