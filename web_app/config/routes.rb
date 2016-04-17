@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :people
+  
   scope defaults: { format: :json } do
     root 'welcome#index'
 

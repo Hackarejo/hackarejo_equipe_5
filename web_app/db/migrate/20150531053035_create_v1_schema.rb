@@ -5,12 +5,13 @@ class CreateV1Schema < ActiveRecord::Migration
       t.date :birthday_at
       t.string :email, null: true
       t.string :phone, null: true
-      t.string :user_id, null: false
+      t.string :user_id
       t.string :image
       t.string :name
       t.string :fb_access_token
       t.text :tags, array: true, default: []
-       t.timestamps null: false
+
+      t.timestamps null: false
     end
 
     add_index :people, :user_id, unique: true
