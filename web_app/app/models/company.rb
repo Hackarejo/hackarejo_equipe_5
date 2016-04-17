@@ -3,4 +3,6 @@ class Company < ActiveRecord::Base
 
   has_many :products
   has_many :offers
+
+  mount_base64_uploader :image, ImageUploader
 end
