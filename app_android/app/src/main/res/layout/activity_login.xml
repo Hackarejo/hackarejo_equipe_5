@@ -31,7 +31,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ou Continue Com seu E-mail"
+        android:text="Ou continue com seu E-mail"
         android:id="@+id/textView"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -40,6 +40,6 @@
         android:layout_alignParentLeft="false"
         android:textColor="#f3f3f3"
         android:textSize="15dp"
-        android:layout_marginBottom="5 dp" />
+        android:layout_marginBottom="5dp" />
 
 </RelativeLayout>
