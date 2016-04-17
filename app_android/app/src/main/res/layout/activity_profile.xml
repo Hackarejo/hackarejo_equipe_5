@@ -4,7 +4,7 @@
                 android:layout_height="match_parent">
 
     <!-- Profile image -->
-    <com.quebragelo.quebragelo.activity.RoundedImageView
+    <com.hackarejo.divulgarejo.activity.RoundedImageView
             android:id="@+id/profile_image"
             android:layout_width="200dp"
             android:layout_height="200dp"

@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">QuebraGelo</string>
+    <string name="app_name">hackarejo</string>
 
     <string name="action_settings">Settings</string>
     <string name="login">login</string>
     <string name="app_profile_page">Seu Perfil</string>
     <string name="logo">txtlogo</string>
     <string name="app_id">616709811797639</string>
-    <string name="QuebraGelo">Quebra Gelo</string>
+    <string name="hackarejo">Quebra Gelo</string>
     <string name="texto">Que tal fazer novos amigos?</string>
     <string name="generally_speak">Generally Speaking.ttf</string>
     <string name="default_tags">futebol, carros, games, tecnologia, informação</string>

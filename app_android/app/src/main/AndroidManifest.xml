@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.quebragelo.quebragelo" >
+          package="com.hackarejo.divulgarejo" >
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -9,16 +9,16 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme">
 
-        <activity android:name=".activity.WelcomeActivity" android:label="@string/app_name">
+        <activity android:name="com.hackarejo.divulgarejo.activity.WelcomeActivity" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.LoginActivity" android:label="@string/app_name"/>
-        <activity android:name=".activity.SearchPeopleActivity" android:label="@string/app_name"/>
-        <activity android:name=".activity.ProfileActivity" android:label="@string/app_profile_page"/>
+        <activity android:name="com.hackarejo.divulgarejo.activity.LoginActivity" android:label="@string/app_name"/>
+        <activity android:name="com.hackarejo.divulgarejo.activity.SearchPeopleActivity" android:label="@string/app_name"/>
+        <activity android:name="com.hackarejo.divulgarejo.activity.ProfileActivity" android:label="@string/app_profile_page"/>
 
         <activity android:name="com.facebook.FacebookActivity"
                   android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
