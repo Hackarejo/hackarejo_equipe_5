@@ -8,6 +8,9 @@ gem 'responders'
 gem 'passenger'
 gem 'active_model_serializers'
 
+gem 'carrierwave'
+gem 'carrierwave-base64'
+
 group :development do
   gem 'spring'
 end
