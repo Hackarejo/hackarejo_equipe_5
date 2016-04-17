@@ -4,6 +4,7 @@ gem 'rails', '4.2.6'
 gem 'rails-api'
 
 gem 'pg'
+gem 'uglifier'
 gem 'dotenv-rails'
 gem 'responders'
 gem 'passenger'
