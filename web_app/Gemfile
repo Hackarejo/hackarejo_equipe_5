@@ -8,8 +8,10 @@ gem 'responders'
 gem 'passenger'
 gem 'active_model_serializers'
 
-gem 'carrierwave'
+gem 'carrierwave', '0.10.0'
 gem 'carrierwave-base64'
+gem 'mini_magick'
+gem 'fog'
 
 group :development do
   gem 'spring'
