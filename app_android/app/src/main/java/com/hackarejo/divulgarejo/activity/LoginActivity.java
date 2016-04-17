@@ -70,11 +70,6 @@ public class LoginActivity extends Activity {
                     }
                 });
 
-        TextView txt = (TextView) findViewById(R.id.txtTitle);
-        Typeface font = Typeface.createFromAsset(getAssets(), "Generally Speaking.ttf");
-        txt.setTextSize(102);
-        txt.setTypeface(font);
-
         ImageView img = (ImageView) findViewById(R.id.imageView);
         img.setImageResource(R.mipmap.image_grid);
     }
@@ -89,8 +84,8 @@ public class LoginActivity extends Activity {
         loginButton.setCompoundDrawablePadding(this.getResources().getDimensionPixelSize(R.dimen.fb_margin_override_textpadding));
 
         loginButton.setPadding(this.getResources().getDimensionPixelSize(R.dimen.fb_margin_override_lr),
-                this.getResources().getDimensionPixelSize(R.dimen.fb_margin_override_top), 0,
-                this.getResources().getDimensionPixelSize(R.dimen.fb_margin_override_bottom));
+               this.getResources().getDimensionPixelSize(R.dimen.fb_margin_override_top), 0,
+               this.getResources().getDimensionPixelSize(R.dimen.fb_margin_override_bottom));
     }
 
     @Override
