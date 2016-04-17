@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+  
   devise_for :people
   
   resources :products
 
   scope defaults: { format: :json } do
-    root 'welcome#index'
 
     get 'welcome', action: :index, controller: :welcome
   end

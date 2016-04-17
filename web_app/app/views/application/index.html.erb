@@ -1,0 +1,51 @@
+<header id="home"> 
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center inner">
+          <%= image_tag 'novas/logomarcatopo.png' %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <input class="subscribe" placeholder="Informe seu Login"></input><br><br>
+          <input class="subscribe" placeholder="Informe sua Senha"></input><br><br>
+          <button type="button" class="learn-more-btn" data-toggle="modal" data-target="#myModal">Cadastre-se</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                    <center>
+                      <h4 class="modal-title" id="myModalLabel">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i>Informações
+                      </h4>
+                    </center>
+                  </div>
+                  <div class="modal-body">
+                    <b><i class="fa fa-user" aria-hidden="true"></i>Titular</b><br><br>
+                    <input class="subscribe" placeholder="Informe seu Nome"></input><br><br><br>
+                    <b><i class="fa fa-user" aria-hidden="true"></i>Dados da Conta</b><br><br>
+                    <input class="subscribe" placeholder="Informe seu Email"></input><br><br>
+                    <input class="subscribe" placeholder="Informe sua Senha"></input><br><br>
+                    <input class="subscribe" placeholder="Confirme sua Senha"></input><br><br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <button type="button" class="learn-more-btn">Login</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>

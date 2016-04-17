@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divulgarejo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <%= favicon_link_tag %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Varela+Round' %> 
+  <%= stylesheet_link_tag 'application', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %>
+  <%= stylesheet_link_tag 'application', 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+  <%= stylesheet_link_tag 'styles' %>
+  <%= stylesheet_link_tag 'queries' %>
+  <%= stylesheet_link_tag 'animate' %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container min-body">
+	  <%= yield %>
+	</div>
+
+	<%= javascript_include_tag 'application' %>
+</body>
+</html>    

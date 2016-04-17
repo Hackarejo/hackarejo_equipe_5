@@ -1,0 +1,1 @@
+Rails.application.config.assets.precompile += %w(styles.css queries.css animate.css)
